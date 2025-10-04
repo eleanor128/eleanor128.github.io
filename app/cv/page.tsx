@@ -83,29 +83,48 @@ export default function CV() {
         {/* Experience */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            經歷 Experience
+            Experience
           </h2>
           <div className="space-y-6">
+            {/* Experience 1 */}
             <div className="border-l-4 border-[#7e97c6] pl-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                前端開發者 Frontend Developer
+                Data Analyst Intern
               </h3>
               <p className="text-[#7e97c6] dark:text-[#a5b8d4] font-medium">
-                ABC Company • 2023 - Present
+                H2U Corporation • June 2025 - Ongoing
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                負責開發和維護公司的網站和網頁應用程式，使用 React 和 Next.js 等現代前端技術。
+                Processed and unified 5M+ records from 2020–2025 for reliable trend analysis  <br></br>
+                Developed 2 ETL workflows with 4+ Sheets and APIs, saving 3+ hours of manual work<br></br>
+                Built 3 BI dashboards visualizing health insights, business metrics, and sports registration data  <br></br>
               </p>
             </div>
+            {/* Experience 2 */}
             <div className="border-l-4 border-green-500 pl-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                網頁設計師 Web Designer
+                Student Dormitory Network Administrator
               </h3>
               <p className="text-green-600 dark:text-green-400 font-medium">
-                XYZ Studio • 2022 - 2023
+                NCU Computer Center • September 2021 – Ongoing
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                設計各種網站的使用者介面，並與開發團隊合作實現設計概念。
+                Installed 5+ network switches to repair unstable connections <br></br>
+                Maintained internet access for 4 dormitories, supporting 100+ residents with stable connectivity  <br></br>
+              </p>
+            </div>
+            {/* Experience 3 */}
+            <div className="border-l-4 border-amber-500 pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                Badminton Team Leader
+              </h3>
+              <p className="text-amber-600 dark:text-amber-400 font-medium">
+                NCU •  June 2021 – June 2023
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                Led daily training sessions for 30+ team members  <br></br>
+                Achieved multiple Top 8 finishes in national college events <br></br>
+                Ranked 5th in Women’s Singles at the 2023 National University Badminton Ranking Tournament <br></br>
               </p>
             </div>
           </div>
@@ -114,25 +133,49 @@ export default function CV() {
         {/* Education */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            教育 Education
+            Education
           </h2>
-          <div className="border-l-4 border-purple-500 pl-6">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              資訊工程學士 Bachelor of Computer Science
-            </h3>
-            <p className="text-purple-600 dark:text-purple-400 font-medium">
-              National Taiwan University • 2018 - 2022
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 mt-2">
-              主修資訊工程，專精於軟體開發和網頁技術。
-            </p>
+          <div className="space-y-6">
+            {/* Education 1 */}
+            <div className="border-l-4 border-teal-500 pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                MSc. in Information Management
+              </h3>
+              <p className="text-teal-600 dark:text-teal-400 font-medium">
+                National Central University, Taiwan • 2024 - Ongoing 
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                Accumulated GPA: 3.97 / 4.3
+              </p>
+            </div>
+            {/* Education 2 */}
+            <div className="border-l-4 border-teal-500 pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                BSc. in Information Management
+              </h3>
+              <p className="text-teal-600 dark:text-purple-400 font-medium">
+                National Central University, Taiwan • 2020 - 2024
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                Overall GPA 3.98 / 4.3
+              </p>
+            </div>
+            {/* Education 3 */}
+            <div className="border-l-4 border-teal-500 pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                Exchange Student in Global Studies Institute
+              </h3>
+              <p className="text-teal-600 dark:text-purple-400 font-medium">
+                 University of Geneva, Switzerland • Feb 2024 - June 2024
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Projects */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+        {/* <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            專案 Projects
+          Projects
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
@@ -168,7 +211,7 @@ export default function CV() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
