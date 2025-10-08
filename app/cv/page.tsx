@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { GiSandSnake } from "react-icons/gi";
 
-export default function CV() {
+export default function cv_page() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
       <div className="container mx-auto px-6 max-w-4xl">
@@ -58,7 +58,7 @@ export default function CV() {
                 Website Development
               </h3>
               <div className="flex flex-wrap gap-2">
-                {['HTML5', 'JavaScript', 'React', 'Laravel', 'Tailwind CSS', ''].map((skill) => (
+                {['HTML5', 'JavaScript', 'React', 'Laravel', 'Tailwind CSS'].map((skill) => (
                   <span key={skill} className="bg-[#f3f5f9] dark:bg-[#2a3441] text-[#7e97c6] dark:text-[#a5b8d4] px-3 py-1 rounded-full text-sm">
                     {skill}
                   </span>
@@ -70,7 +70,7 @@ export default function CV() {
                 Others
               </h3>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'Figma', 'Database', 'API Design'].map((skill) => (
+                {['Git', 'Dashboard Development', 'Database', 'API Design', 'Figma'].map((skill) => (
                   <span key={skill} className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">
                     {skill}
                   </span>
@@ -163,7 +163,7 @@ export default function CV() {
             {/* Education 3 */}
             <div className="border-l-4 border-teal-500 pl-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Exchange Student in Global Studies Institute
+                Exchange Student
               </h3>
               <p className="text-teal-600 dark:text-purple-400 font-medium">
                  University of Geneva, Switzerland • Feb 2024 - June 2024
@@ -172,46 +172,48 @@ export default function CV() {
           </div>
         </div>
 
-        {/* Projects */}
-        {/* <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+        {/* Language Skills */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-          Projects
+            Language Skills
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                個人網站
+          <div className="space-y-6">
+            {/* Language 1 */}
+            <div className="border-l-4 border-violet-500 pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                Mandarin Chinese
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                使用 Next.js 和 Tailwind CSS 建立的響應式個人網站
+              <p className="text-violet-400 dark:text-teal-400 font-medium">
+                Native 
               </p>
-              <div className="flex flex-wrap gap-1">
-                <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded text-xs">
-                  Next.js
-                </span>
-                <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded text-xs">
-                  Tailwind CSS
-                </span>
-              </div>
             </div>
-            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                電商網站
+            {/* Language 2 */}
+            <div className="border-l-4 border-violet-500 pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                English
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                全端電商平台，包含購物車、付款系統等功能
+              <p className="text-violet-400 dark:text-teal-400 font-medium">
+                Fluent
               </p>
-              <div className="flex flex-wrap gap-1">
-                <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded text-xs">
-                  React
-                </span>
-                <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded text-xs">
-                  Node.js
-                </span>
-              </div>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                TOEIC score: 905 (Listening: 495/495)
+              </p>
+            </div>
+            {/* Language 3 */}
+            <div className="border-l-4 border-violet-500 pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                French
+              </h3>
+              <p className="text-violet-400 dark:text-teal-400 font-medium">
+                Beginner
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                DELF A2 (Reading 25/25)
+              </p>
             </div>
           </div>
-        </div> */}
+        </div>
+
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ export default function Header() {
               Home
             </Link>
             <Link 
-              href="/cv" 
+              href="/myproject" 
               className={`text-lg font-medium transition-colors hover:text-[#7e97c6] dark:hover:text-[#a5b8d4] ${
                 pathname === '' ? 'text-[#7e97c6] dark:text-[#a5b8d4]' : 'text-gray-700 dark:text-gray-300'
               }`}
@@ -36,7 +36,7 @@ export default function Header() {
               CV
             </Link>
               <Link 
-              href="/cv" 
+              href="/" 
               className={`text-lg font-medium transition-colors hover:text-[#7e97c6] dark:hover:text-[#a5b8d4] ${
                 pathname === '' ? 'text-[#7e97c6] dark:text-[#a5b8d4]' : 'text-gray-700 dark:text-gray-300'
               }`}

@@ -15,13 +15,13 @@ export default function Home() {
               href="/cv"
               className="bg-[#7e97c6] hover:bg-[#6b85b3] text-white font-semibold py-3 px-8 rounded-lg transition-colors"
             >
-              查看我的CV
+              My CV
             </a>
             <a
               href="#about"
               className="border border-[#7e97c6] text-[#7e97c6] hover:bg-[#7e97c6] hover:text-white font-semibold py-3 px-8 rounded-lg transition-colors"
             >
-              了解更多
+              Learn More
             </a>
           </div>
         </div>
