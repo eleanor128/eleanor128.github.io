@@ -178,11 +178,8 @@ export default function MyProjectPage() {
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            My Projects
-          </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A collection of projects showcasing my skills in web development, data analysis, and system administration.
+            Here are some of my projects done at school or during internship. 
           </p>
         </div>
 
