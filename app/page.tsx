@@ -38,17 +38,7 @@ export default function Home() {
               這裡是關於我的簡介。你可以在這裡添加你的個人介紹、興趣愛好、專業技能等內容。
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center">
-                <div className="bg-[#f3f5f9] dark:bg-[#2a3441] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💻</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  技術
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Web開發、程式設計
-                </p>
-              </div>
+                
               <div className="text-center">
                 <div className="bg-[#f3f5f9] dark:bg-[#2a3441] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🎨</span>
@@ -58,17 +48,6 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
                   UI/UX設計、創意思維
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-[#f3f5f9] dark:bg-[#2a3441] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">📚</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  學習
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  持續學習、知識分享
                 </p>
               </div>
             </div>

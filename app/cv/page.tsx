@@ -116,7 +116,7 @@ export default function cv_page() {
             {/* Experience 3 */}
             <div className="border-l-4 border-amber-500 pl-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Badminton Team Leader
+                Badminton Team Captain
               </h3>
               <p className="text-amber-600 dark:text-amber-400 font-medium">
                 NCU •  June 2021 – June 2023
@@ -197,6 +197,9 @@ export default function cv_page() {
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
                 TOEIC score: 905 (Listening: 495/495)
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                IELTS score:  7.5 (L 9.0, R 8.5, W 6.5, S 6.5)
               </p>
             </div>
             {/* Language 3 */}
