@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Eleanor",
   description: "Personal website and CV",
+  icons: {
+    icon: '/footprint.png',
+    shortcut: '/footprint.png',
+    apple: '/footprint.png',
+  },
 };
 
 export default function RootLayout({
@@ -25,11 +30,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/footprint.png" type="image/png" />
-        <link rel="shortcut icon" href="/footprint.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/footprint.png" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
