@@ -142,7 +142,7 @@ export default function cv_page() {
                 MSc. in Information Management
               </h3>
               <p className="text-teal-600 dark:text-teal-400 font-medium">
-                National Central University, Taiwan • 2024 - Ongoing 
+                National Central University, Taiwan • Sept. 2024 - Ongoing
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
                 Accumulated GPA: 3.97 / 4.3
@@ -154,7 +154,7 @@ export default function cv_page() {
                 BSc. in Information Management
               </h3>
               <p className="text-teal-600 dark:text-purple-400 font-medium">
-                National Central University, Taiwan • 2020 - 2024
+                National Central University, Taiwan • Sept. 2020 - Jun. 2024
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
                 Overall GPA 3.98 / 4.3
@@ -166,7 +166,7 @@ export default function cv_page() {
                 Exchange Student
               </h3>
               <p className="text-teal-600 dark:text-purple-400 font-medium">
-                 University of Geneva, Switzerland • Feb 2024 - June 2024
+                 University of Geneva, Switzerland • Feb. 2024 - Jun. 2024
               </p>
             </div>
           </div>
