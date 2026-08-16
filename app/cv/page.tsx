@@ -92,7 +92,7 @@ export default function cv_page() {
                 Data Analyst Intern
               </h3>
               <p className="text-[#7e97c6] dark:text-[#a5b8d4] font-medium">
-                H2U Corporation • June 2025 - Ongoing
+                H2U Corporation • June 2025 - January 2026
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
                 Processed and unified 5M+ records from 2020–2025 for reliable trend analysis  <br></br>
@@ -106,7 +106,7 @@ export default function cv_page() {
                 Student Dormitory Network Administrator
               </h3>
               <p className="text-green-600 dark:text-green-400 font-medium">
-                NCU Computer Center • September 2021 – Ongoing
+                NCU Computer Center • September 2021 – June 2026
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
                 Installed 5+ network switches to repair unstable connections <br></br>
@@ -136,16 +136,28 @@ export default function cv_page() {
             Education
           </h2>
           <div className="space-y-6">
+            {/* Education now */}
+            <div className="border-l-4 border-teal-500 pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                MSc. in Computer Science
+              </h3>
+              <p className="text-teal-600 dark:text-teal-400 font-medium">
+                UNC Chapel Hill, North Carolina, USA • Aug. 2026 - Ongoing
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                
+              </p>
+            </div>
             {/* Education 1 */}
             <div className="border-l-4 border-teal-500 pl-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                 MSc. in Information Management
               </h3>
               <p className="text-teal-600 dark:text-teal-400 font-medium">
-                National Central University, Taiwan • Sept. 2024 - Ongoing
+                National Central University, Taiwan • Sept. 2024 - June 2026
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                Accumulated GPA: 3.97 / 4.3
+                Accumulated GPA: 3.99 / 4.3
               </p>
             </div>
             {/* Education 2 */}
