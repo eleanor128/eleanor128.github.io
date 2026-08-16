@@ -45,12 +45,12 @@ export default function Header() {
             </Link>
 
             <Link 
-              href="/blog_article" 
+              href="/blog" 
               className={`text-lg font-medium transition-colors hover:text-[#7e97c6] dark:hover:text-[#a5b8d4] ${
-                pathname === '/blog_article' ? 'text-[#7e97c6] dark:text-[#a5b8d4]' : 'text-gray-700 dark:text-gray-300'
+                pathname?.startsWith('/blog') ? 'text-[#7e97c6] dark:text-[#a5b8d4]' : 'text-gray-700 dark:text-gray-300'
               }`}
             >
-              Blog Article
+              Blog
             </Link>
           </div>
         </div>
