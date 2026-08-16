@@ -20,9 +20,9 @@ export default function Header() {
               Home
             </Link>
             <Link 
-              href="/myproject" 
+              href="/projects" 
               className={`text-lg font-medium transition-colors hover:text-[#7e97c6] dark:hover:text-[#a5b8d4] ${
-                pathname === '/myproject' ? 'text-[#7e97c6] dark:text-[#a5b8d4]' : 'text-gray-700 dark:text-gray-300'
+                pathname === '/projects' ? 'text-[#7e97c6] dark:text-[#a5b8d4]' : 'text-gray-700 dark:text-gray-300'
               }`}
             >
               Projects
@@ -35,23 +35,23 @@ export default function Header() {
             >
               CV
             </Link>
-              <Link 
+              {/* <Link 
               href="/more_about_me" 
               className={`text-lg font-medium transition-colors hover:text-[#7e97c6] dark:hover:text-[#a5b8d4] ${
                 pathname === '/more_about_me' ? 'text-[#7e97c6] dark:text-[#a5b8d4]' : 'text-gray-700 dark:text-gray-300'
               }`}
             >
               More About Me
-            </Link>
+            </Link> */}
 
-            <Link 
+            {/* <Link 
               href="/blog_article" 
               className={`text-lg font-medium transition-colors hover:text-[#7e97c6] dark:hover:text-[#a5b8d4] ${
                 pathname === '/blog_article' ? 'text-[#7e97c6] dark:text-[#a5b8d4]' : 'text-gray-700 dark:text-gray-300'
               }`}
             >
               Blog Article
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
