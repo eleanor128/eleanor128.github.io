@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaDatabase, FaPython, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaDatabase, FaPython } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiLaravel, SiMysql, SiPostgresql, SiMongodb, SiJavascript, SiTypescript } from 'react-icons/si';
 
 interface Project {
@@ -9,7 +9,6 @@ interface Project {
   title: string;
   subtitle: string;
   description: string;
-  detailedDescription: string;
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
@@ -24,7 +23,6 @@ const projects: Project[] = [
     title: "",
     subtitle: "IOT Drum Stick",
     description: "An innovative IoT drumstick that captures drumming motions and translates them into digital audio, enabling remote music practice and performance.",
-    detailedDescription: "The IOT Drum Stick is a smart musical instrument that combines hardware sensors with software to detect and analyze drumming patterns. Using motion sensors and wireless connectivity, it captures the drummer's movements in real-time and converts them into MIDI signals or audio output. This project demonstrates the integration of IoT technology with music, making it possible to practice drumming anywhere without physical drums.",
     technologies: ["Raspberry Pi", "JavaScript"],
     githubUrl: "https://github.com/eleanor128/IOT-Drum-Stick",
     liveUrl: "https://www.youtube.com/watch?v=Q8ORrFAGLZA",
@@ -38,7 +36,6 @@ const projects: Project[] = [
     title: "",
     subtitle: "Marathon BI Dashboard",
     description: "A business intelligence dashboard for marathon data analysis and visualization.",
-    detailedDescription: "The Marathon BI Dashboard is designed to provide insights into marathon events by visualizing key performance indicators (KPIs) and trends. It integrates data from various sources, including participant registrations, race results, and demographic information. The dashboard allows users to explore data through interactive charts and filters, enabling them to gain a deeper understanding of marathon participation and performance.",
     technologies: ["Looker Studio", "SQL", "Python"],
     githubUrl: "https://github.com/eleanor128/Gender-Prediction",
     image: "/MarathonBI.png",
@@ -50,7 +47,6 @@ const projects: Project[] = [
     title: "",
     subtitle: "Gender Prediction from Online Surveys",
     description: "A machine learning group project achieving 86.38% accuracy in predicting gender from online survey data through advanced feature engineering.",
-    detailedDescription: "This group project developed a comprehensive machine learning workflow to predict gender from online survey responses. The project involved extensive data preprocessing, handling missing values through manual and KNN imputation methods, and sophisticated feature engineering including BMI calculations, text-length metrics, and gender-keyword embeddings. Applied Recursive Feature Elimination (RFE) to optimize the feature set and trained multiple models to achieve 86.38% prediction accuracy.",
     technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "KNN", "RFE"],
     githubUrl: "https://github.com/eleanor128/Gender-Prediction",
     image: "/GenderPrediction.png",
@@ -62,7 +58,6 @@ const projects: Project[] = [
     title: "",
     subtitle: "CoCo Funding Platform",
     description: "A MERN-stack crowdfunding platform developed as a group project with primary focus on backend development.",
-    detailedDescription: "CoCo Funding Platform is a comprehensive MERN-stack (MongoDB, Express.js, React, Node.js) group project that enables creators to launch crowdfunding campaigns and connect with supporters. As the primary backend developer, I designed and implemented backend services for proposals and comments, including data modeling, RESTful CRUD APIs, and database architecture. Collaborated closely with the team on system design and integration to ensure platform robustness and scalability.",
     technologies: ["MongoDB", "Express.js", "Node.js", "React", "JavaScript", "RESTful API"],
     githubUrl: "https://github.com/CoCo-CrowdFunding/CoCo-Funding",
     image: "/CoCoCrowdFundingPlatform.png",
@@ -74,7 +69,6 @@ const projects: Project[] = [
     title: "",
     subtitle: "AI Visual Novel",
     description: "An AI-driven text adventure game using OpenAI API and DALL·E. Semifinalist in the International ICT Innovative Services Awards 2023.",
-    detailedDescription: "AI Visual Novel is a bachelor's graduation group project that combines artificial intelligence with interactive storytelling. As part of a 4-person team, I was responsible for designing and implementing the player-facing UI and scene-navigation logic in Unity using C#. The game utilizes OpenAI API and DALL·E to generate dynamic storylines and visuals, creating a unique experience for each player. I also developed a JSON-based save/load mechanism to persist and restore game progress. The project was recognized as a semifinalist in the International ICT Innovative Services Awards 2023 (Taiwan).",
     technologies: ["Unity", "C#", "OpenAI API", "DALL·E", "JSON", "Game Design"],
     githubUrl: "https://github.com/AI-VisualNovel/UnityProject",
     image: "/AIVisualNovel.png",
@@ -127,17 +121,12 @@ const getTechIcon = (tech: string) => {
 };
 
 export default function MyProjectPage() {
-  const [expandedProject, setExpandedProject] = useState<number | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   const categories = ['All', ...Array.from(new Set(projects.map(p => p.category)))];
   const filteredProjects = selectedCategory === 'All' 
     ? projects 
     : projects.filter(p => p.category === selectedCategory);
-
-  const toggleProject = (projectId: number) => {
-    setExpandedProject(expandedProject === projectId ? null : projectId);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#f3f5f9] to-[#e8eef7] dark:from-gray-900 dark:to-gray-800 py-12">
@@ -215,11 +204,6 @@ export default function MyProjectPage() {
                         <span className="text-gray-700 dark:text-gray-300">{tech}</span>
                       </div>
                     ))}
-                    {project.technologies.length > 3 && (
-                      <span className="text-xs text-gray-500 dark:text-gray-400 px-2 py-1">
-                        +{project.technologies.length - 3} more
-                      </span>
-                    )}
                   </div>
 
                   {/* Action Buttons */}
@@ -249,46 +233,8 @@ export default function MyProjectPage() {
                       )}
                     </div>
                     
-                    <button
-                      onClick={() => toggleProject(project.id)}
-                      className="flex items-center gap-2 text-[#7e97c6] hover:text-[#6b85b3] transition-colors font-medium text-sm"
-                    >
-                      {expandedProject === project.id ? 'Less' : 'More'}
-                      {expandedProject === project.id ? 
-                        <FaChevronUp size={12} /> : 
-                        <FaChevronDown size={12} />
-                      }
-                    </button>
                   </div>
                 </div>
-
-                {/* Expanded Content */}
-                {expandedProject === project.id && (
-                  <div className="border-t border-gray-200 dark:border-gray-700 p-6 bg-gray-50 dark:bg-gray-900 animate-fadeIn">
-                    <div className="space-y-6">
-                      {/* Detailed Description */}
-                      <div>
-                        <h5 className="font-semibold text-gray-900 dark:text-white mb-2">About this project</h5>
-                        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                          {project.detailedDescription}
-                        </p>
-                      </div>
-
-                      {/* All Technologies */}
-                      <div>
-                        <h5 className="font-semibold text-gray-900 dark:text-white mb-3">Technologies Used</h5>
-                        <div className="flex flex-wrap gap-2">
-                          {project.technologies.map((tech) => (
-                            <div key={tech} className="flex items-center gap-1 bg-white dark:bg-gray-800 px-3 py-1 rounded-full text-sm border">
-                              {getTechIcon(tech)}
-                              <span className="text-gray-700 dark:text-gray-300">{tech}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
               </div>
             </div>
           ))}
