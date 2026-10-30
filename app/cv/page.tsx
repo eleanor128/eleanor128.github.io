@@ -86,6 +86,18 @@ export default function cv_page() {
             Experience
           </h2>
           <div className="space-y-6">
+            {/* Experience 0 */}
+            <div className="border-l-4 border-[#7e97c6] pl-6">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                Game Analyst Intern
+              </h3>
+              <p className="text-[#7e97c6] dark:text-[#a5b8d4] font-medium">
+                Global Origin • August 2026 - Present
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
+                Analyzed 1000+ game records to identify unusual user behavior patterns, providing actionable insights for game balance adjustments.<br></br>
+              </p>
+            </div>
             {/* Experience 1 */}
             <div className="border-l-4 border-[#7e97c6] pl-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -142,7 +154,7 @@ export default function cv_page() {
                 MSc. in Computer Science
               </h3>
               <p className="text-teal-600 dark:text-teal-400 font-medium">
-                UNC Chapel Hill, North Carolina, USA • Aug. 2026 - Ongoing
+                UNC Chapel Hill, North Carolina, USA • Aug. 2026 - Present
               </p>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
                 
@@ -206,12 +218,6 @@ export default function cv_page() {
               </h3>
               <p className="text-violet-400 dark:text-teal-400 font-medium">
                 Fluent
-              </p>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">
-                TOEIC score: 905 (Listening: 495/495)
-              </p>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">
-                IELTS score:  7.5 (L 9.0, R 8.5, W 6.5, S 6.5)
               </p>
             </div>
             {/* Language 3 */}
